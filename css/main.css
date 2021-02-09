@@ -21,19 +21,9 @@ hr {
   transform: translate(-50%, -50%);
 }
 
-/*.middle {*/
-/*  top: 50%;*/
-/*  transform: translate(0, -50%);*/
-/*}*/
-
-/*.center {*/
-/*  left: 50%;*/
-/*  transform: translate(-50%, 0);*/
-/*}*/
-
 #main-container {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 #menu-container {

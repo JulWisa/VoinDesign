@@ -37,7 +37,7 @@ h6 {
   margin: 0;
 }
 
-.project-description > h3, #project3-2 h3 {
+.project-description > h3, #project3-2 h3, .tariff h3 {
   color: #58664a;
   text-align: center;
 }
@@ -74,4 +74,13 @@ h6 {
 .project-bottom > p, .yellow-block > p {
   color: white;
   font: lighter 28px Serif;
+}
+
+.tariff-head > h3{
+  color: white;
+  text-align: center;
+}
+
+#tariff-left p, #tariff-right p {
+  text-align: left;
 }
