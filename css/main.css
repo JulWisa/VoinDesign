@@ -7,9 +7,32 @@ img {
   max-width:100%;
 }
 
+hr {
+  border: solid #58664a 2px;
+  /*margin-inline: 1em;*/
+}
+
+/*Выравнивание по центру и середине*/
+.middle-center {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*.middle {*/
+/*  top: 50%;*/
+/*  transform: translate(0, -50%);*/
+/*}*/
+
+/*.center {*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, 0);*/
+/*}*/
+
 #main-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #menu-container {

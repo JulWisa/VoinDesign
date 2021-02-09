@@ -2,7 +2,6 @@
 #info-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #info-1, #info-2, #info-3 {
@@ -27,20 +26,10 @@
   position: absolute;
   vertical-align: middle;
   width: 100%;
-
-  /*Выравнивание по центру и середине*/
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #info-1 > div {
   padding-inline: 12px
-}
-
-#info-2 hr {
-  border: solid #58664a 2px;
-  margin-inline: 1em;
 }
 
 #info-3 div {

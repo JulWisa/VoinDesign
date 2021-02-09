@@ -10,7 +10,18 @@ a {
 }
 
 p {
-  font-size: 24px;
+  color: #58664a;
+  font: 24px sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #58664a;
+  text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -44,4 +55,10 @@ h3 {
 
 .center {
   text-align: center;
+  display: block;
+}
+
+.white-text {
+  color: white;
+  font: lighter 28px Serif;
 }
