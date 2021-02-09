@@ -29,7 +29,15 @@ h3 {
   font-weight: lighter;
 }
 
-.project-description > h3 {
+h6 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.project-description > h3, #project3-2 h3 {
   color: #58664a;
   text-align: center;
 }
@@ -63,7 +71,7 @@ h3 {
   display: block;
 }
 
-.project-bottom > p {
+.project-bottom > p, .yellow-block > p {
   color: white;
   font: lighter 28px Serif;
 }
