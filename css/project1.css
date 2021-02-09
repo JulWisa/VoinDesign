@@ -1,8 +1,3 @@
-#project1-container-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 #project1-1 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -23,12 +18,31 @@
 #project1-1-2 {
 }
 
-#project1-2-2 {
-  background-color: #58664a;
+.project-bottom {
   margin: 5% 5% 0;
   padding: 10%;
 }
 
-#project1-3 {
+.project-description {
   padding: 10%;
+}
+
+#project2-1 {
+
+}
+
+#project2-1 {
+  display: grid;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#project2-1 > .middle-center {
+  transform: translate(-50%, -0%);
+}
+
+.double-project {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }

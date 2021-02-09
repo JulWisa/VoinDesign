@@ -5,6 +5,7 @@ html {
 
 img {
   max-width:100%;
+  object-fit: cover;
 }
 
 hr {
@@ -32,7 +33,7 @@ hr {
 
 #main-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 #menu-container {
@@ -42,5 +43,14 @@ hr {
   flex-grow: 1;
 
   padding-block: 12px;
+  background-color: #58664a;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.green-block {
   background-color: #58664a;
 }
