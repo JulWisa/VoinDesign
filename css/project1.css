@@ -59,7 +59,7 @@
 
 #project3-2 {
   display: grid;
-  grid-template-rows: 0.4fr 0.4fr 0.2fr;
+  grid-template-rows: 0.4fr 0.6fr;
 }
 
 #project3-3 > div{
@@ -73,6 +73,7 @@
 }
 
 #project3-2-2 {
-  overflow: auto;
+  /*height: 100%;*/
+  /*overflow: auto;*/
   padding: 3%;
 }
