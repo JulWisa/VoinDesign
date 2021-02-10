@@ -84,16 +84,16 @@
   background-color: #f1b856;
 }
 
-#tariff-left, #tariff-right {
+.tariff-left, .tariff-right {
   display: grid;
   grid-template-rows: 0.2fr 0.8fr;
 }
 
-#tariff-left {
+.tariff-left {
   margin-left: 10%;
 }
 
-#tariff-right {
+.tariff-right {
   margin-right: 10%;
 }
 
@@ -102,4 +102,28 @@
   display: grid;
   grid-template-rows: 0.3fr 0.2fr 0.5fr;
   padding: 0 5%;
+}
+
+.tariff-2 {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.tariff-2-center {
+  padding: 0 5%;
+}
+
+.circle {
+  background-color: #58664a;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.over-circle {
+  position: relative;
 }

@@ -84,3 +84,13 @@ h6 {
 #tariff-left p, #tariff-right p {
   text-align: left;
 }
+
+.circle p {
+  color: #bdc7bb;
+  font-family: serif;
+  font-size: 120px;
+}
+
+.text-left {
+  text-align: left;
+}
