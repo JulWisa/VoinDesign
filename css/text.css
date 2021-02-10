@@ -94,3 +94,7 @@ h6 {
 .text-left {
   text-align: left;
 }
+
+.white-text {
+  color: white;
+}
