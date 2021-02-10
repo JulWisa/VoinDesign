@@ -98,3 +98,9 @@ h6 {
 .white-text {
   color: white;
 }
+
+.contacts-container h3, .contacts-container h3 a{
+  margin: 1% 0;
+  font-weight: lighter;
+  text-decoration: none;
+}
