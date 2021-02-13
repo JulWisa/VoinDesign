@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#info-1, #info-2, #info-3 {
+#info-1, #contacts, #info-3 {
   position: relative;
   height: 700px;
 }
