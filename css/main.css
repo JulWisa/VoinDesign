@@ -28,14 +28,14 @@ hr {
 }
 
 #menu-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
   padding-block: 12px;
   background-color: #58664a;
+  text-align: center;
 }
+
 
 .project-container {
   display: grid;
