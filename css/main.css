@@ -50,6 +50,13 @@ hr {
   background-color: #58664a;
 }
 
-/*.divider {*/
-/*  height: 56px;*/
-/*}*/
+#instagram-btn {
+  display: block;
+  background-color: #f1b856;
+  border-radius: 4px;
+  line-height: 2em;
+  text-decoration: none;
+  text-transform: none;
+
+  margin-inline: 5%;
+}
