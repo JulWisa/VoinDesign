@@ -51,12 +51,20 @@ hr {
 }
 
 #instagram-btn {
-  display: block;
-  background-color: #f1b856;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+
+  background-color: #58664a;
   border-radius: 4px;
   line-height: 2em;
   text-decoration: none;
   text-transform: none;
+  text-align: left;
 
+  padding-inline: 8px;
   margin-inline: 5%;
+}
+
+svg {
+  height: 2em!important;
 }
