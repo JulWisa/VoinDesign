@@ -1,8 +1,16 @@
 a {
   color: white;
   text-decoration: none;
-  font-family: serif;
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
+}
+
+.old-standard-text {
+  font-family: 'Old Standard TT', serif;
+}
+
+.download-link {
+  font-size: 32px;
 }
 
 .underline {
@@ -15,13 +23,14 @@ a {
 
 p {
   color: #58664a;
-  font: 24px sans-serif;
+  font: 24px 'Montserrat', sans-serif;
   text-align: center;
 }
 
 h2 {
   font-size: 52px;
   font-weight: lighter;
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
   color: #58664a;
   text-align: center;
@@ -31,6 +40,7 @@ h2 {
 h3 {
   font-size: 32px;
   font-weight: lighter;
+  font-family: 'Old Standard TT', serif;
 }
 
 h6 {
@@ -49,12 +59,12 @@ h6 {
 .menu-link {
   color: white;
   text-transform: uppercase;
-  font: normal 32px Georgia Serif;
+  font: normal 32px 'Old Standard TT', serif;
 }
 
 .yellow-block-text {
   color: white;
-  font: lighter 32px Serif;
+  font: lighter 32px 'Old Standard TT', Serif;
 }
 
 .transparent-block-text {
@@ -63,7 +73,7 @@ h6 {
 }
 
 .sans-serif-text {
-  font: 24px sans-serif;
+  font: 24px 'Montserrat', sans-serif;
 }
 
 .upper {
@@ -77,7 +87,7 @@ h6 {
 
 .project-bottom > p, .yellow-block > p {
   color: white;
-  font: lighter 28px Serif;
+  font: lighter 28px 'Old Standard TT', Serif;
 }
 
 .tariff-head > h3{
@@ -91,7 +101,7 @@ h6 {
 
 .circle p {
   color: #bdc7bb;
-  font-family: serif;
+  font-family: 'Old Standard TT', serif;
   font-size: 120px;
 }
 
@@ -107,4 +117,8 @@ h6 {
   margin: 1% 0;
   font-weight: lighter;
   text-decoration: none;
+}
+
+#contacts h3 {
+  font-weight: normal;
 }
