@@ -65,6 +65,6 @@ hr {
   margin-inline: 5%;
 }
 
-svg {
-  height: 2em!important;
+#instagram-btn svg {
+  height: 2em;
 }
