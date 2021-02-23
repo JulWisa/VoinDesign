@@ -133,7 +133,7 @@
   grid-template-rows: 0.8fr 1fr 1fr;
 }
 
-.concepts .first-row, .concepts .second-row {
+.concepts .img-to-zoom {
   border-style: solid;
   border-width: 2px;
   border-color: #58664a;
