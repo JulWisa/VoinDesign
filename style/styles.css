@@ -1,0 +1,134 @@
+.h3-font {
+  font: normal 24px 'Old Standard TT', serif;
+}
+.outer {
+  position: relative;
+}
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.description-text {
+  color: #58664a;
+  font: bold 16px 'Montserrat', sans-serif;
+  text-align: center;
+}
+.div-with-three-equal-grid-fragments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.dark-green-background {
+  background-color: #58664a;
+}
+.yellow-background {
+  background-color: #f1b856;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.yellow-block-text {
+  color: white;
+  font: normal 24px 'Old Standard TT', serif;
+}
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #58664a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 8px 48px;
+  text-align: center;
+  white-space: pre;
+}
+#menu-container a {
+  padding-inline: 8px;
+  font: normal 24px 'Old Standard TT', serif;
+  color: white;
+  text-transform: uppercase;
+}
+#main-container {
+  margin-inline: 48px;
+}
+#main-container #info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#main-container #info-container div {
+  position: relative;
+}
+#main-container #info-container .part-1 div {
+  background-color: #f1b856;
+  color: white;
+  font: normal 24px 'Old Standard TT', serif;
+  position: absolute;
+  bottom: 0;
+  padding-inline: 8px;
+  text-align: left;
+}
+#main-container #info-container #contacts {
+  color: #58664a;
+}
+#main-container #info-container #contacts div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-inline: 48px;
+}
+#main-container #info-container #contacts div #instagram-btn {
+  position: relative;
+  font: normal 24px 'Old Standard TT', serif;
+  display: block;
+  background-color: #58664a;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  line-height: 2em;
+  padding-inline: 8px;
+}
+#main-container #info-container #contacts div #instagram-btn .right {
+  right: 8px;
+  position: absolute;
+  top: 0;
+  /* top: 50%; */
+  transform: translate(0%, 90%);
+  height: 16px;
+}
+#main-container #info-container .part-3 img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  height: 100%;
+}
+#main-container #info-container .part-3 div {
+  background-color: #f1b856;
+  color: white;
+  font: normal 24px 'Old Standard TT', serif;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  opacity: 90%;
+  padding-inline: 48px;
+}
+#main-container #info-container .part-3 div p {
+  font: normal 16px 'Old Standard TT', serif;
+  color: white;
+  text-transform: uppercase;
+}
+h3 {
+  font: normal 24px 'Old Standard TT', serif;
+  text-align: center;
+}
+p {
+  color: #58664a;
+  font: bold 16px 'Montserrat', sans-serif;
+  text-align: center;
+}
+hr {
+  border: solid #58664a 2px;
+}
+/*# sourceMappingURL=styles.css.map */

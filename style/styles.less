@@ -1,0 +1,182 @@
+@yellow: #f1b856;
+@light-green: #bdc7bb;
+@dark-green: #58664a;
+
+@inline-offset: 48px;
+
+@min-z-index: 10;
+@mid-z-index: 50;
+@max-z-index: 100;
+
+@opacity: 90%;
+
+@max-offset: 16px;
+@mid-offset: 12px;
+@min-offset: 8px;
+
+@three-equal-fragments: repeat(3, 1fr);
+
+@important-text-font-family: 'Old Standard TT', serif;
+@description-text-font-family: 'Montserrat', sans-serif;
+
+@max-font-size: 24px;
+@mid-font-size: 20px;
+@min-font-size: 16px;
+
+.h3-font {
+  font: normal @max-font-size @important-text-font-family;
+}
+
+.outer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.description-text {
+  color: @dark-green;
+  font: bold @min-font-size @description-text-font-family;
+  text-align: center;
+}
+
+.div-with-three-equal-grid-fragments {
+  display: grid;
+  grid-template-columns: @three-equal-fragments;
+}
+
+.dark-green-background {
+  background-color: @dark-green;
+}
+
+.yellow-background {
+  background-color: @yellow;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: @max-z-index;
+}
+
+.yellow-block-text {
+  color: white;
+  font: normal @max-font-size @important-text-font-family;
+}
+
+// Меню
+#menu-container {
+  .div-with-three-equal-grid-fragments;
+  .dark-green-background;
+  .sticky;
+
+  padding: @min-offset @inline-offset;
+  text-align: center;
+  white-space: pre;
+
+  a {
+    padding-inline: @min-offset;
+    font: normal @max-font-size @important-text-font-family;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+// Основной блок между меню и контактами
+#main-container {
+  margin-inline: @inline-offset;
+
+  #info-container {
+    .div-with-three-equal-grid-fragments;
+
+    div {
+      .outer;
+    }
+
+    .part-1 {
+      div {
+        .yellow-background;
+        .yellow-block-text;
+
+        position: absolute;
+        bottom: 0;
+
+        padding-inline: @min-offset;
+        text-align: left;
+      }
+    }
+
+    #contacts {
+      color: @dark-green;
+
+      div {
+        .inner;
+        margin-inline: @inline-offset;
+
+        #instagram-btn {
+          .outer;
+          .h3-font;
+          display: block;
+
+          background-color: @dark-green;
+          border-radius: 4px;
+          text-decoration: none;
+          text-transform: none;
+          text-align: left;
+          line-height: 2em;
+          padding-inline: @min-offset;
+
+          .right {
+            right: 8px;
+            position: absolute;
+            top: 0;
+            /* top: 50%; */
+            transform: translate(0%, 90%);
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .part-3 {
+      img {
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      div {
+        .yellow-background;
+        .yellow-block-text;
+        position: absolute;
+        top: 0;
+        z-index: @mid-z-index;
+        opacity: @opacity;
+        padding-inline: @inline-offset;
+
+        p {
+          font: normal @min-font-size @important-text-font-family;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+h3 {
+  .h3-font;
+  text-align: center;
+}
+
+p {
+  .description-text;
+}
+
+hr {
+  border: solid @dark-green 2px;
+}
