@@ -1,46 +1,6 @@
-#project2-1 {
-  display: grid;
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#project2-1 > .middle-center {
-  transform: translate(-50%, -0%);
-}
-
 .double-project {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-}
-
-#project3-1 {
-  display: grid;
-  grid-template-rows: 0.25fr 0.75fr;
-}
-
-#project3-1 > .yellow-block{
-  padding: 10%;
-  margin-left: 10%;
-}
-
-#project3-2 {
-  display: grid;
-  grid-template-rows: 0.4fr 0.6fr;
-}
-
-#project3-3 > div{
-  padding: 10%;
-  margin-right: 10%;
-}
-
-#project3-3 {
-  display: grid;
-  grid-template-rows: 0.75fr 0.25fr;
-}
-
-#project3-2-2 {
-  padding: 3%;
 }
 
 .tariff {
