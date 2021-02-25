@@ -1,5 +1,5 @@
 .h3-font {
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
 }
 .outer {
   position: relative;
@@ -11,7 +11,7 @@
 }
 .description-text {
   color: #58664a;
-  font: bold 16px 'Montserrat', sans-serif;
+  font: bold 20px 'Montserrat', sans-serif;
   text-align: center;
 }
 .div-with-three-equal-grid-fragments {
@@ -31,7 +31,7 @@
 }
 .yellow-block-text {
   color: white;
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
 }
 #menu-container {
   display: grid;
@@ -46,7 +46,7 @@
 }
 #menu-container a {
   padding-inline: 8px;
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
   color: white;
   text-transform: uppercase;
 }
@@ -60,10 +60,13 @@
 #main-container #info-container div {
   position: relative;
 }
+#main-container #info-container .part-1 {
+  background-color: #f1b856;
+}
 #main-container #info-container .part-1 div {
   background-color: #f1b856;
   color: white;
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
   position: absolute;
   bottom: 0;
   padding-inline: 8px;
@@ -80,22 +83,20 @@
 }
 #main-container #info-container #contacts div #instagram-btn {
   position: relative;
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
   display: block;
   background-color: #58664a;
   border-radius: 4px;
   text-decoration: none;
   text-transform: none;
   text-align: left;
-  line-height: 2em;
-  padding-inline: 8px;
+  padding: 8px;
 }
 #main-container #info-container #contacts div #instagram-btn .right {
   right: 8px;
   position: absolute;
   top: 0;
-  /* top: 50%; */
-  transform: translate(0%, 90%);
+  transform: translate(0%, 17.33333333px);
   height: 16px;
 }
 #main-container #info-container .part-3 img {
@@ -107,7 +108,7 @@
 #main-container #info-container .part-3 div {
   background-color: #f1b856;
   color: white;
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
   position: absolute;
   top: 0;
   z-index: 50;
@@ -115,17 +116,17 @@
   padding-inline: 48px;
 }
 #main-container #info-container .part-3 div p {
-  font: normal 16px 'Old Standard TT', serif;
+  font: normal 20px 'Old Standard TT', serif;
   color: white;
   text-transform: uppercase;
 }
 h3 {
-  font: normal 24px 'Old Standard TT', serif;
+  font: normal 28px 'Old Standard TT', serif;
   text-align: center;
 }
 p {
   color: #58664a;
-  font: bold 16px 'Montserrat', sans-serif;
+  font: bold 20px 'Montserrat', sans-serif;
   text-align: center;
 }
 hr {

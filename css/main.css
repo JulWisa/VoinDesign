@@ -22,7 +22,7 @@ img {
 
 #main-container {
   display: grid;
-  grid-template-rows: 1fr repeat(6, 56px 1fr);
+  grid-template-rows: 0.7fr repeat(6, 56px 1fr);
 }
 
 .project-container {

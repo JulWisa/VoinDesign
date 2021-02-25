@@ -19,9 +19,9 @@
 @important-text-font-family: 'Old Standard TT', serif;
 @description-text-font-family: 'Montserrat', sans-serif;
 
-@max-font-size: 24px;
-@mid-font-size: 20px;
-@min-font-size: 16px;
+@max-font-size: 28px;
+@mid-font-size: 24px;
+@min-font-size: 20px;
 
 .h3-font {
   font: normal @max-font-size @important-text-font-family;
@@ -97,6 +97,7 @@
     }
 
     .part-1 {
+      .yellow-background;
       div {
         .yellow-background;
         .yellow-block-text;
@@ -126,15 +127,13 @@
           text-decoration: none;
           text-transform: none;
           text-align: left;
-          line-height: 2em;
-          padding-inline: @min-offset;
+          padding: @min-offset;
 
           .right {
             right: 8px;
             position: absolute;
             top: 0;
-            /* top: 50%; */
-            transform: translate(0%, 90%);
+            transform: translate(0%, @min-offset + (@max-font-size/3));
             height: 16px;
           }
         }
