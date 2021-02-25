@@ -9,29 +9,10 @@ a {
   font-family: 'Old Standard TT', serif;
 }
 
-.download-link {
-  font-size: 32px;
-}
-
 .underline {
   text-decoration: underline;
 }
 
-h2 {
-  font-size: 52px;
-  font-weight: lighter;
-  font-family: 'Old Standard TT', serif;
-  text-transform: uppercase;
-  color: #58664a;
-  text-align: center;
-  margin: 0;
-}
-
-h3 {
-  font-size: 32px;
-  font-weight: lighter;
-  font-family: 'Old Standard TT', serif;
-}
 
 h6 {
   font-size: 20px;
@@ -40,12 +21,6 @@ h6 {
   font-weight: lighter;
   margin: 0;
 }
-
-.project-description > h3, #project3-2 h3, .tariff h3 {
-  color: #58664a;
-  text-align: center;
-}
-
 
 
 .yellow-block-text {

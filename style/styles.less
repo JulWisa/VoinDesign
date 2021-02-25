@@ -14,17 +14,30 @@
 @mid-offset: 12px;
 @min-offset: 8px;
 
-@three-equal-fragments: repeat(3, 1fr);
-
 @important-text-font-family: 'Old Standard TT', serif;
 @description-text-font-family: 'Montserrat', sans-serif;
 
-@max-font-size: 28px;
-@mid-font-size: 24px;
+@max-font-size: @mid-font-size + 4px;
+@mid-font-size: @min-font-size + 4px;
 @min-font-size: 20px;
+@h2-font-size: @max-font-size*1.3;
+@h1-font-size: @h2-font-size*1.5;
 
 .h3-font {
   font: normal @max-font-size @important-text-font-family;
+}
+
+.h2-white {
+  h2 {
+    color: white;
+    text-transform: none;
+    line-height: 1.4em;
+  }
+}
+
+.absolute-inline-offset {
+  left: @inline-offset;
+  right: @inline-offset;
 }
 
 .outer {
@@ -41,11 +54,23 @@
   color: @dark-green;
   font: bold @min-font-size @description-text-font-family;
   text-align: center;
+  line-height: 1.5em;
 }
 
-.div-with-three-equal-grid-fragments {
+.download-link {
+  font: lighter @h2-font-size @important-text-font-family;
+  text-align: center;
+  display: block;
+}
+
+.div-with-three-equal-grid-columns {
   display: grid;
-  grid-template-columns: @three-equal-fragments;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div-with-two-equal-grid-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .dark-green-background {
@@ -67,9 +92,14 @@
   font: normal @max-font-size @important-text-font-family;
 }
 
+.main-container-grid-props {
+  display: grid;
+  grid-template-rows: 0.7fr repeat(6, 56px 1fr);
+}
+
 // Меню
 #menu-container {
-  .div-with-three-equal-grid-fragments;
+  .div-with-three-equal-grid-columns;
   .dark-green-background;
   .sticky;
 
@@ -88,9 +118,14 @@
 // Основной блок между меню и контактами
 #main-container {
   margin-inline: @inline-offset;
+  .main-container-grid-props;
+
+  .divider {
+    .dark-green-background;
+  }
 
   #info-container {
-    .div-with-three-equal-grid-fragments;
+    .div-with-three-equal-grid-columns;
 
     div {
       .outer;
@@ -165,6 +200,72 @@
       }
     }
   }
+
+  .project-container {
+    .div-with-three-equal-grid-columns;
+  }
+
+  #project-1-container {
+    .div-with-three-equal-grid-columns;
+
+    .part-1 {
+      .div-with-two-equal-grid-rows;
+
+      .part-top {
+        .outer;
+
+        div {
+          .inner;
+          .absolute-inline-offset;
+        }
+      }
+    }
+
+    .part-2 {
+      .div-with-two-equal-grid-rows;
+
+      .part-bottom {
+        .outer;
+        .dark-green-background;
+        margin: @max-offset @max-offset 0 @max-offset;
+
+        div {
+          .inner;
+          padding: 0 @max-offset;
+
+          .h2-white;
+        }
+      }
+    }
+
+    .part-3 {
+      .outer;
+
+      div {
+        .inner;
+        .absolute-inline-offset;
+      }
+    }
+  }
+}
+
+h1 {
+  font: lighter @h1-font-size @important-text-font-family;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: @dark-green;
+  text-align: center;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+h2 {
+  font: lighter @h2-font-size @important-text-font-family;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: @dark-green;
+  text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -178,4 +279,9 @@ p {
 
 hr {
   border: solid @dark-green 2px;
+}
+
+img {
+  max-width:100%;
+  object-fit: cover;
 }

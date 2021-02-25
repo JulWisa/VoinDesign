@@ -7,24 +7,6 @@ body {
   margin: 0;
 }
 
-img {
-  max-width:100%;
-  object-fit: cover;
-}
-
-/*Выравнивание по центру и середине*/
-.middle-center {
-  position: inherit;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#main-container {
-  display: grid;
-  grid-template-rows: 0.7fr repeat(6, 56px 1fr);
-}
-
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
