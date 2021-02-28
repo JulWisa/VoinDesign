@@ -50,6 +50,12 @@
   transform: translate(0, -50%);
 }
 
+.inner-without-offsets {
+  .inner;
+  right: 0;
+  left: 0;
+}
+
 .inner-bottom {
   position: absolute;
   bottom: 0;
@@ -76,6 +82,16 @@
 .div-with-two-equal-grid-rows {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-1fr-4fr-rows {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.grid-2fr-1fr-3fr-rows {
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr;
 }
 
 .dark-green-background {
@@ -116,6 +132,30 @@
 .main-container-grid-props {
   display: grid;
   grid-template-rows: 0.7fr repeat(6, 56px 1fr);
+}
+
+.padding-inline {
+   padding-inline: @inline-offset;
+ }
+
+.margin-inline-half {
+  margin-inline: @inline-offset ./ 2;
+}
+
+.margin-right {
+  margin-right: @inline-offset;
+}
+
+.margin-left {
+  margin-left: @inline-offset;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 // Меню
@@ -294,6 +334,14 @@
       a.inner  {
         left: 0;
         right: 0;
+      }
+    }
+  }
+
+  #tariff-1 {
+    .part-1 {
+      div.outer {
+        margin-right: @inline-offset;
       }
     }
   }

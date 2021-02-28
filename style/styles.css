@@ -18,6 +18,13 @@
   top: 50%;
   transform: translate(0, -50%);
 }
+.inner-without-offsets {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  left: 0;
+}
 .inner-bottom {
   position: absolute;
   bottom: 0;
@@ -40,6 +47,14 @@
 .div-with-two-equal-grid-rows {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+}
+.grid-1fr-4fr-rows {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+.grid-2fr-1fr-3fr-rows {
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr;
 }
 .dark-green-background {
   background-color: #58664a;
@@ -77,6 +92,24 @@
 .main-container-grid-props {
   display: grid;
   grid-template-rows: 0.7fr repeat(6, 56px 1fr);
+}
+.padding-inline {
+  padding-inline: 48px;
+}
+.margin-inline-half {
+  margin-inline: 24px;
+}
+.margin-right {
+  margin-right: 48px;
+}
+.margin-left {
+  margin-left: 48px;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 #menu-container {
   display: grid;
@@ -249,6 +282,9 @@
 #main-container #project-3-container .part-3 a.inner {
   left: 0;
   right: 0;
+}
+#main-container #tariff-1 .part-1 div.outer {
+  margin-right: 48px;
 }
 h1 {
   font: lighter 54.6px 'Old Standard TT', serif;
