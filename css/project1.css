@@ -1,18 +1,18 @@
 
-.circle {
-  background-color: #58664a;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: relative;
+/*.circle {*/
+/*  background-color: #58664a;*/
+/*  width: 200px;*/
+/*  height: 200px;*/
+/*  border-radius: 50%;*/
+/*  position: relative;*/
 
-  left: 50%;
-  transform: translate(-50%, 0);
-}
+/*  left: 50%;*/
+/*  transform: translate(-50%, 0);*/
+/*}*/
 
-.over-circle {
-  position: relative;
-}
+/*.over-circle {*/
+/*  position: relative;*/
+/*}*/
 
 .concepts {
   display: grid;

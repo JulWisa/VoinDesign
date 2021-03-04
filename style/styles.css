@@ -56,6 +56,10 @@
   display: grid;
   grid-template-rows: 2fr 1fr 3fr;
 }
+.grid-1fr-1fr-2fr-rows {
+  display: grid;
+  grid-template-rows: 1fr 200px 2fr;
+}
 .dark-green-background {
   background-color: #58664a;
 }
@@ -105,11 +109,29 @@
 .margin-left {
   margin-left: 48px;
 }
+.margin-top {
+  margin-top: 48px;
+}
+.margin-bottom {
+  margin-bottom: 48px;
+}
 .text-left {
   text-align: left;
 }
 .text-right {
   text-align: right;
+}
+.big-numbers {
+  font: bold 120px 'Leckerli One', cursive;
+  color: #bdc7bb;
+}
+.circle {
+  background-color: #58664a;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  transform: translate(25%, -50%);
 }
 #menu-container {
   display: grid;
