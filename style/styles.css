@@ -126,17 +126,20 @@
 .text-right {
   text-align: right;
 }
-.big-numbers {
-  font: bold 120px 'Leckerli One', cursive;
-  color: #bdc7bb;
-}
 .circle {
   background-color: #58664a;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  position: relative;
-  transform: translate(25%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle .big-numbers {
+  font: bold 150px 'Leckerli One', cursive;
+  color: #bdc7bb;
+  margin: 0;
 }
 #menu-container {
   display: grid;
