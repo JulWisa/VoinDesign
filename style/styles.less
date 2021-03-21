@@ -23,6 +23,8 @@
 @h2-font-size: @max-font-size*1.3;
 @h1-font-size: @h2-font-size*1.5;
 
+@border-width:2px;
+
 .h3-font {
   font: normal @max-font-size @important-text-font-family;
 }
@@ -32,6 +34,14 @@
     color: white;
     text-transform: none;
     line-height: 1.4em;
+  }
+}
+
+.h3-white {
+  h3 {
+    color: white;
+    text-transform: none;
+    margin: 0;
   }
 }
 
@@ -211,6 +221,7 @@
 
   .divider {
     .dark-green-background;
+    margin-inline: -@inline-offset;
   }
 
   #info-container {
@@ -371,6 +382,42 @@
       div.outer {
         margin-right: @inline-offset;
       }
+    }
+  }
+
+  #design-boards-container {
+    .concepts {
+      display: grid;
+      grid-template-rows: 0.8fr 1fr 1fr;
+
+      .concepts-title {
+        .dark-green-background;
+        .h3-white;
+        .outer;
+        width: 120%;
+        margin-bottom: @max-offset;
+
+        h3 {
+          padding-inline: @min-offset;
+        }
+      }
+
+      .img-to-zoom {
+        border-style: solid;
+        border-width: @border-width;
+        border-color: @dark-green;
+
+        margin: @max-offset;
+        padding: @max-offset;
+      }
+    }
+  }
+
+  .contacts-container {
+    padding-block: @min-offset;
+
+    h3 {
+      margin: 0;
     }
   }
 }

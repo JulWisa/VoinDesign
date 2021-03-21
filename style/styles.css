@@ -6,6 +6,11 @@
   text-transform: none;
   line-height: 1.4em;
 }
+.h3-white h3 {
+  color: white;
+  text-transform: none;
+  margin: 0;
+}
 .absolute-inline-offset {
   left: 48px;
   right: 48px;
@@ -157,6 +162,7 @@
 }
 #main-container .divider {
   background-color: #58664a;
+  margin-inline: -48px;
 }
 #main-container #info-container {
   display: grid;
@@ -307,6 +313,37 @@
 }
 #main-container #tariff-1 .part-1 div.outer {
   margin-right: 48px;
+}
+#main-container #design-boards-container .concepts {
+  display: grid;
+  grid-template-rows: 0.8fr 1fr 1fr;
+}
+#main-container #design-boards-container .concepts .concepts-title {
+  background-color: #58664a;
+  position: relative;
+  width: 120%;
+  margin-bottom: 16px;
+}
+#main-container #design-boards-container .concepts .concepts-title h3 {
+  color: white;
+  text-transform: none;
+  margin: 0;
+}
+#main-container #design-boards-container .concepts .concepts-title h3 {
+  padding-inline: 8px;
+}
+#main-container #design-boards-container .concepts .img-to-zoom {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #58664a;
+  margin: 16px;
+  padding: 16px;
+}
+#main-container .contacts-container {
+  padding-block: 8px;
+}
+#main-container .contacts-container h3 {
+  margin: 0;
 }
 h1 {
   font: lighter 54.6px 'Old Standard TT', serif;

@@ -12,9 +12,4 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.green-block {
-  background-color: #58664a;
-}
-
-
 
