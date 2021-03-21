@@ -345,6 +345,17 @@
 #main-container .contacts-container h3 {
   margin: 0;
 }
+html {
+  background-color: #bdc7bb;
+  font: normal 32px Georgia Serif;
+}
+body {
+  margin: 0;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 h1 {
   font: lighter 54.6px 'Old Standard TT', serif;
   line-height: 1em;
@@ -379,5 +390,12 @@ hr {
 img {
   max-width: 100%;
   object-fit: cover;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */
