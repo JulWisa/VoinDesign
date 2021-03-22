@@ -4,9 +4,6 @@
     <list default="true" id="293e7bb3-5ca1-4ca2-8fc2-5142c8e87282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/styles.less" afterDir="false" />
@@ -25,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="358" column="36" lean-forward="true" selection-start-line="358" selection-start-column="36" selection-end-line="358" selection-end-column="36" />
+            <state relative-caret-position="165">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -59,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
+            <state relative-caret-position="260">
+              <caret line="501" column="2" selection-start-line="501" selection-start-column="2" selection-end-line="501" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -190,16 +187,15 @@
       <workItem from="1612287973586" duration="29467000" />
       <workItem from="1613064479179" duration="5569000" />
       <workItem from="1614109676002" duration="10716000" />
-      <workItem from="1614181576459" duration="40920000" />
+      <workItem from="1614181576459" duration="41724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86672000" />
+    <option name="totallyTimeSpent" value="87476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -309,8 +305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="358" column="36" lean-forward="true" selection-start-line="358" selection-start-column="36" selection-end-line="358" selection-end-column="36" />
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -341,8 +337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
+        <state relative-caret-position="260">
+          <caret line="501" column="2" selection-start-line="501" selection-start-column="2" selection-end-line="501" selection-end-column="2" />
         </state>
       </provider>
     </entry>

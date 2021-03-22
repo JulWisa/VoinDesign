@@ -406,4 +406,12 @@ button:active,
 button:focus {
   outline: none;
 }
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter {
+  color: #58664a;
+}
+.sl-wrapper .sl-counter {
+  font: bold 28px 'Montserrat', sans-serif;
+}
 /*# sourceMappingURL=styles.css.map */
