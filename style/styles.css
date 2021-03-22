@@ -319,7 +319,7 @@
 }
 #main-container #design-boards-container .concepts {
   display: grid;
-  grid-template-rows: 0.8fr 1fr 1fr;
+  grid-template-rows: 0.8fr 0 1fr 0 1fr;
 }
 #main-container #design-boards-container .concepts .concepts-title {
   background-color: #58664a;
@@ -341,6 +341,13 @@
   border-color: #58664a;
   margin: 16px;
   padding: 16px;
+}
+#main-container #design-boards-container .concepts .search-icon {
+  color: #f1b856;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 50;
 }
 #main-container .contacts-container {
   padding-block: 8px;

@@ -391,7 +391,7 @@
   #design-boards-container {
     .concepts {
       display: grid;
-      grid-template-rows: 0.8fr 1fr 1fr;
+      grid-template-rows: 0.8fr 0 1fr 0 1fr;
 
       .concepts-title {
         .dark-green-background;
@@ -412,6 +412,14 @@
 
         margin: @max-offset;
         padding: @max-offset;
+      }
+
+      .search-icon {
+        color: @yellow;
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+        z-index: @mid-z-index;
       }
     }
   }
