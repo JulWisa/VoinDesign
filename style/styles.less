@@ -97,6 +97,11 @@
 .div-with-three-equal-grid-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: @phone-screen) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .div-with-two-equal-grid-rows {
@@ -141,6 +146,7 @@
 
 .sticky {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: @max-z-index;
 }
@@ -156,15 +162,26 @@
 
 .main-container-grid-props {
   display: grid;
-  grid-template-rows: 0.7fr repeat(6, 56px 1fr);
+  grid-template-rows: 0.7fr repeat(5, 56px 1fr) 56px 0.7fr;
+
+  @media (max-width: @phone-screen) {
+    grid-template-rows: 0.7fr repeat(4, 56px 1fr) 56px 0.5fr 56px 0.7fr;
+  }
 }
 
 .padding-inline {
    padding-inline: @inline-offset;
+  // safari
+  padding-left: @inline-offset;
+  padding-right: @inline-offset;
  }
 
 .margin-inline-half {
   margin-inline: @inline-offset ./ 2;
+
+  // safari
+  margin-left: @inline-offset ./ 2;
+  margin-right: @inline-offset ./ 2;
 }
 
 .margin-right {
@@ -223,24 +240,39 @@
 
   padding: @min-offset @inline-offset;
   text-align: center;
-  white-space: pre;
+  word-wrap: normal;
 
   a {
     padding-inline: @min-offset;
+    // safari
+    padding-left: @min-offset;
+    padding-right: @min-offset;
+
     font: normal @max-font-size @important-text-font-family;
     color: white;
     text-transform: uppercase;
+
+    @media (max-width: @wide-screen) {
+      font-size: @mid-font-size;
+    }
   }
 }
 
 // Основной блок между меню и контактами
 #main-container {
   margin-inline: @inline-offset;
+  // safari
+  margin-left: @inline-offset;
+  margin-right: @inline-offset;
+
   .main-container-grid-props;
 
   .divider {
     .dark-green-background;
     margin-inline: -@inline-offset;
+    // safari
+    margin-left: -@inline-offset;
+    margin-right: -@inline-offset;
   }
 
   #info-container {
@@ -260,6 +292,9 @@
         bottom: 0;
 
         padding-inline: @min-offset;
+        // safari
+        padding-left: @min-offset;
+        padding-right: @min-offset;
 
         p {
           text-align: left;
@@ -274,6 +309,9 @@
       div {
         .inner;
         margin-inline: @inline-offset;
+        // safari
+        margin-left: @inline-offset;
+        margin-right: @inline-offset;
 
         #instagram-btn {
           .outer;
@@ -314,6 +352,9 @@
         z-index: @mid-z-index;
         opacity: @opacity;
         padding-inline: @inline-offset;
+        // safari
+        padding-left: @inline-offset;
+        padding-right: @inline-offset;
 
         p {
           font: normal @min-font-size @important-text-font-family;
@@ -387,6 +428,9 @@
       grid-template-rows: 2fr 4fr;
 
       padding-inline: @mid-offset;
+      // safari
+      padding-left: @mid-offset;
+      padding-right: @mid-offset;
     }
 
     .part-3 {
@@ -410,8 +454,95 @@
 
   #tariff-1 {
     .part-1 {
+      .grid-1fr-4fr-rows;
       div.outer {
         margin-right: @inline-offset;
+      }
+
+      grid-area: part-1;
+    }
+
+    .part-2 {
+      .grid-2fr-1fr-3fr-rows;
+
+      grid-area: part-2;
+    }
+
+    .part-3 {
+      .grid-1fr-4fr-rows;
+
+      grid-area: part-3;
+    }
+
+
+    grid-template-areas: "part-1 part-2 part-3";
+
+    @media (max-width: @phone-screen) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "part-2" "part-1" "part-3";
+
+      p {
+        text-align: center;
+      }
+      .part-1, .part-2, .part-3 {
+        div {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  #tariff-2 {
+    .outer .circle{
+      @media (max-width: @phone-screen) {
+        display: none;
+      }
+    }
+    .part-1 {
+      .margin-right;
+      .grid-1fr-1fr-2fr-rows;
+      grid-area: part-1;
+
+      @media (max-width: @phone-screen) {
+        grid-template-rows: 0 0 1fr;
+        div {
+          margin: 0;
+        }
+      }
+    }
+    .part-2 {
+      .margin-inline-half;
+      .grid-1fr-1fr-2fr-rows;
+      grid-area: part-2;
+
+      @media (max-width: @phone-screen) {
+        grid-template-rows: 1fr 0 1fr;
+      }
+    }
+    .part-3 {
+      .margin-left;
+      .grid-1fr-1fr-2fr-rows;
+      grid-area: part-3;
+
+      @media (max-width: @phone-screen) {
+        grid-template-rows: 0 0 1fr;
+        div {
+          margin: 0;
+        }
+      }
+    }
+
+    grid-template-areas: "part-1 part-2 part-3";
+
+    @media (max-width: @phone-screen) {
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-template-areas: "part-2" "part-1" "part-3";
+
+      p {
+        text-align: center;
+      }
+      .part-1, .part-2, .part-3 {
+        margin: 0;
       }
     }
   }
@@ -430,6 +561,13 @@
 
         h3 {
           padding-inline: @min-offset;
+          // safari
+          padding-left: @min-offset;
+          padding-right: @min-offset;
+        }
+
+        @media (max-width: @phone-screen) {
+          width: 100%;
         }
       }
 
@@ -440,6 +578,10 @@
 
         margin: @max-offset;
         padding: @max-offset;
+
+        img {
+          min-height: 100%;
+        }
       }
 
       .search-icon {
@@ -450,10 +592,30 @@
         z-index: @mid-z-index;
       }
     }
+
+    .part-1 {
+      grid-area: part-1;
+    }
+    .part-2 {
+      grid-area: part-2;
+    }
+    .part-3 {
+      grid-area: part-3;
+    }
+
+    grid-template-areas: "part-1 part-2 part-3";
+
+    @media (max-width: @phone-screen) {
+      grid-template-areas: "part-2" "part-1" "part-3";
+    }
   }
 
   .contacts-container {
     padding-block: @min-offset;
+    margin-inline: -@inline-offset;
+    // safari
+    margin-left: -@inline-offset;
+    margin-right: -@inline-offset;
 
     h3 {
       margin: 0;
@@ -500,7 +662,7 @@ h2 {
   margin: 0;
 
   @media (max-width: @wide-screen) {
-    font-size: @max-plus-font-size;
+    font-size: @max-font-size;
   }
 }
 
@@ -547,5 +709,12 @@ button:focus {
 }
 
 body {
-  min-width: @narrow-screen;
+
+  @media (min-width: @phone-screen) {
+    min-width: @narrow-screen;
+  }
+
+  @media (max-width: @phone-screen) {
+    min-width: 400px;
+  }
 }
