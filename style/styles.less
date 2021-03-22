@@ -17,9 +17,11 @@
 @important-text-font-family: 'Old Standard TT', serif;
 @description-text-font-family: 'Montserrat', sans-serif;
 
+@max-plus-font-size: @max-font-size + 4px;
 @max-font-size: @mid-font-size + 4px;
 @mid-font-size: @min-font-size + 4px;
 @min-font-size: 20px;
+
 @h2-font-size: @max-font-size*1.3;
 @h1-font-size: @h2-font-size*1.5;
 
@@ -199,6 +201,12 @@
   }
 }
 
+.p-on-yellow-background {
+  font: lighter @max-plus-font-size @important-text-font-family;
+  color: white;
+  line-height: 1.5em;
+}
+
 // Меню
 #menu-container {
   .div-with-three-equal-grid-columns;
@@ -244,7 +252,11 @@
         bottom: 0;
 
         padding-inline: @min-offset;
-        text-align: left;
+
+        p {
+          text-align: left;
+          margin-block: @min-offset;
+        }
       }
     }
 
@@ -377,6 +389,10 @@
         left: 0;
         right: 0;
       }
+    }
+
+    p {
+      .p-on-yellow-background;
     }
   }
 

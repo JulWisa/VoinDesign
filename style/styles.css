@@ -141,6 +141,11 @@
   color: #bdc7bb;
   margin: 0;
 }
+.p-on-yellow-background {
+  font: lighter 32px 'Old Standard TT', serif;
+  color: white;
+  line-height: 1.5em;
+}
 #menu-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -184,7 +189,10 @@
   position: absolute;
   bottom: 0;
   padding-inline: 8px;
+}
+#main-container #info-container .part-1 div p {
   text-align: left;
+  margin-block: 8px;
 }
 #main-container #info-container #contacts {
   color: #58664a;
@@ -313,6 +321,11 @@
 #main-container #project-3-container .part-3 a.inner {
   left: 0;
   right: 0;
+}
+#main-container #project-3-container p {
+  font: lighter 32px 'Old Standard TT', serif;
+  color: white;
+  line-height: 1.5em;
 }
 #main-container #tariff-1 .part-1 div.outer {
   margin-right: 48px;
