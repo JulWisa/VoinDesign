@@ -299,6 +299,9 @@
         p {
           text-align: left;
           margin-block: @min-offset;
+          // opera, safari
+          margin-top: @min-offset;
+          margin-bottom: @min-offset;
         }
       }
     }
@@ -612,6 +615,9 @@
 
   .contacts-container {
     padding-block: @min-offset;
+    // opera, safari
+    padding-top: @min-offset;
+    padding-bottom: @min-offset;
     margin-inline: -@inline-offset;
     // safari
     margin-left: -@inline-offset;
