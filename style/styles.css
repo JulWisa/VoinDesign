@@ -45,6 +45,11 @@
   text-align: center;
   display: block;
 }
+@media (max-width: 1000px) {
+  .download-link {
+    font-size: 32px;
+  }
+}
 .div-with-three-equal-grid-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -327,6 +332,11 @@
   color: white;
   line-height: 1.5em;
 }
+@media (max-width: 1300px) {
+  #main-container #project-3-container p {
+    font-size: 28px;
+  }
+}
 #main-container #tariff-1 .part-1 div.outer {
   margin-right: 48px;
 }
@@ -371,6 +381,7 @@
 html {
   background-color: #bdc7bb;
   font: normal 32px Georgia Serif;
+  -webkit-text-size-adjust: none ;
 }
 body {
   margin: 0;
@@ -388,6 +399,11 @@ h1 {
   margin: 0;
   word-wrap: break-word;
 }
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 36.4px;
+  }
+}
 h2 {
   font: lighter 36.4px 'Old Standard TT', serif;
   line-height: 1.2em;
@@ -396,6 +412,11 @@ h2 {
   text-align: center;
   display: block;
   margin: 0;
+}
+@media (max-width: 1300px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 h3 {
   font: normal 28px 'Old Standard TT', serif;
@@ -433,5 +454,8 @@ button:focus {
 }
 .sl-wrapper .sl-counter {
   font: bold 28px 'Montserrat', sans-serif;
+}
+body {
+  min-width: 1000px;
 }
 /*# sourceMappingURL=styles.css.map */

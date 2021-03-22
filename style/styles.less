@@ -27,6 +27,10 @@
 
 @border-width:2px;
 
+@wide-screen: 1300px;
+@narrow-screen: 1000px;
+@phone-screen: 650px;
+
 .h3-font {
   font: normal @max-font-size @important-text-font-family;
 }
@@ -84,6 +88,10 @@
   font: lighter @h2-font-size @important-text-font-family;
   text-align: center;
   display: block;
+
+  @media (max-width: @narrow-screen) {
+    font-size: @max-plus-font-size;
+  }
 }
 
 .div-with-three-equal-grid-columns {
@@ -393,6 +401,10 @@
 
     p {
       .p-on-yellow-background;
+
+      @media(max-width: @wide-screen) {
+        font-size: @max-font-size;
+      }
     }
   }
 
@@ -452,6 +464,7 @@
 html {
   background-color: #bdc7bb;
   font: normal 32px Georgia Serif;
+  -webkit-text-size-adjust: none ;
 }
 
 body {
@@ -471,6 +484,10 @@ h1 {
   text-align: center;
   margin: 0;
   word-wrap: break-word;
+
+  @media (max-width: @wide-screen) {
+    font-size: @h2-font-size;
+  }
 }
 
 h2 {
@@ -481,6 +498,10 @@ h2 {
   text-align: center;
   display: block;
   margin: 0;
+
+  @media (max-width: @wide-screen) {
+    font-size: @max-plus-font-size;
+  }
 }
 
 h3 {
@@ -523,4 +544,8 @@ button:focus {
 
 .sl-wrapper .sl-counter {
   font: bold @max-font-size @description-text-font-family;
+}
+
+body {
+  min-width: @narrow-screen;
 }
